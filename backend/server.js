@@ -24,6 +24,7 @@ connectDB();
 app.use(helmet());
 const allowedOrigins = [
   "http://localhost:5173",
+  "https://fairway-impact-silk.vercel.app",
   process.env.FRONTEND_URL,
 ].filter(Boolean);
 
@@ -34,9 +35,11 @@ app.use(
         return callback(null, true);
       }
 
-      return callback(new Error("CORS origin not allowed."));
+      return callback(null, false);
     },
     credentials: true,
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   }),
 );
 app.use(express.json());
