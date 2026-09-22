@@ -230,6 +230,33 @@ align-items: center;
   cursor: not-allowed;
 }
 
+.demo-credentials {
+  margin-top: 10px;
+  padding: 5px 10px;
+  color: #66736a;
+  background: #f3f6f2;
+  border: 1px solid #dfe7df;
+  border-radius: 9px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.demo-credentials p {
+  margin: 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.demo-credentials strong {
+  color: #2d392f;
+}
+
+.demo-credentials-line {
+  height: 1px;
+  margin: 9px 0;
+  background: #d9e1d9;
+}
+
 /* Mobile */
 
 @media (max-width: 800px) {

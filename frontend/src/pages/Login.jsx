@@ -70,6 +70,29 @@ function Login() {
             <p className="login-eyebrow">WELCOME BACK</p>
             <h4>Log in to your account</h4>
             <p>Enter your details to continue.</p>
+
+            <div className="demo-credentials">
+              <p>
+                <span>
+                  <strong>Admin:</strong> admin@example.com{" "}
+                </span>
+                <span>
+                  <strong>Password:</strong> tushar123
+                </span>
+              </p>
+
+              <div className="demo-credentials-line" />
+
+              <p>
+                <span>
+                  <strong>User:</strong> raj@gmail.com 
+                </span>
+                <span>
+                  <strong>Password:</strong> 123456
+                </span>
+              </p>
+              <p></p>
+            </div>
           </div>
 
           <form onSubmit={handleSubmit}>
