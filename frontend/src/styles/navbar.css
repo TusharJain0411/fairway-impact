@@ -1,0 +1,51 @@
+.navbar {
+  width: 100%;
+  margin: auto;
+  padding: 26px 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.logo span {
+  margin-left: 3px;
+  color: #f4c95d;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  color: #c9d0cd;
+  font-size: 14px;
+}
+
+.login-link:hover {
+  color: #ffffff;
+}
+
+.subscribe-btn {
+  padding: 11px 18px;
+  background: #f4c95d;
+  color: #161616;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.subscribe-btn:hover {
+  background: #ffe18b;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .nav-links a:not(.login-link) {
+    display: none;
+  }
+}

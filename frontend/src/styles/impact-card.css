@@ -1,0 +1,52 @@
+.impact-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 690px;
+  margin: 80px auto 0;
+  overflow: hidden;
+  text-align: left;
+  background: #18201d;
+  border: 1px solid #33403b;
+  border-radius: 18px;
+}
+
+.impact-card > div {
+  padding: 28px;
+}
+
+.impact-card > div + div {
+  border-left: 1px solid #33403b;
+}
+
+.card-icon {
+  margin-bottom: 15px;
+}
+
+.pink {
+  color: #fa8faf;
+}
+
+.yellow {
+  color: #f4c95d;
+}
+
+.impact-card p {
+  margin-bottom: 7px;
+  color: #aeb9b3;
+  font-size: 13px;
+}
+
+.impact-card h3 {
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  .impact-card {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-card > div + div {
+    border-top: 1px solid #33403b;
+    border-left: none;
+  }
+}

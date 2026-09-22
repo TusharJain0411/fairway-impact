@@ -1,0 +1,88 @@
+.recent-scores-card {
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #e0e4e0;
+  border-radius: 15px;
+}
+
+.section-card-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+
+.section-label {
+  margin-bottom: 7px;
+  color: #9a731e;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.section-card-heading h2 {
+  color: #263229;
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+}
+
+.section-card-heading a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #966d17;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.score-list {
+  display: grid;
+}
+
+.score-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-top: 1px solid #e7e9e7;
+}
+
+.score-row > div:first-child strong {
+  color: #2d392f;
+  font-size: 14px;
+}
+
+.score-row > div:first-child p {
+  margin-top: 4px;
+  color: #7a857d;
+  font-size: 12px;
+}
+
+.score-value {
+  text-align: right;
+}
+
+.score-value span {
+  display: block;
+  margin-bottom: 3px;
+  color: #8a958d;
+  font-size: 11px;
+}
+
+.score-value strong {
+  color: #9a7118;
+  font-size: 21px;
+}
+
+.recent-scores-empty {
+  display: grid;
+  min-height: 170px;
+  padding: 20px;
+  place-items: center;
+  color: #78847b;
+  text-align: center;
+}
+
+.recent-scores-empty svg {
+  color: #b38a2b;
+}

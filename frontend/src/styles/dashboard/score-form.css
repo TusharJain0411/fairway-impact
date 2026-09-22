@@ -1,0 +1,90 @@
+.score-form {
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #dfe4df;
+  border-radius: 15px;
+}
+
+.score-form-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 38px;
+}
+
+.score-form-heading p {
+  margin-bottom: 7px;
+  color: #9a731e;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.score-form-heading h2 {
+  color: #263229;
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+}
+
+.cancel-edit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px;
+  color: #6b766e;
+  background: transparent;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.score-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #3b473f;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.score-form input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 18px;
+  padding: 0 14px;
+  outline: none;
+  color: #243028;
+  border: 1px solid #d4dbd5;
+  border-radius: 9px;
+  font-size: 14px;
+}
+
+.score-form input:focus {
+  border-color: #b98721;
+  box-shadow: 0 0 0 3px #faedca;
+}
+
+.score-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+}
+
+.save-score-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px;
+  color: #1d251f;
+  background: #f4c95d;
+  border: none;
+  border-radius: 9px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.save-score-btn:hover {
+  background: #ffe18b;
+}

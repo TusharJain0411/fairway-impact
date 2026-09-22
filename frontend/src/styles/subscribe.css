@@ -1,0 +1,152 @@
+.subscribe-page {
+  min-height: 100vh;
+  background: #f7f5f0;
+  color: #1b251e;
+}
+
+.subscribe-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(1180px, 92%);
+  margin: auto;
+  padding: 26px 0;
+}
+
+.subscribe-logo {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.subscribe-logo span {
+  margin-left: 3px;
+  color: #a8781c;
+}
+
+.subscribe-back {
+  color: #69756d;
+  font-size: 14px;
+}
+
+.subscribe-back:hover {
+  color: #1b251e;
+}
+
+.subscribe-content {
+  width: min(930px, 92%);
+  margin: auto;
+  padding: 70px 0 85px;
+  text-align: center;
+}
+
+.subscribe-eyebrow {
+  margin-bottom: 16px;
+  color: #9b731e;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.subscribe-content h1 {
+  max-width: 700px;
+  margin: auto;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(40px, 5vw, 62px);
+  line-height: 1.05;
+}
+
+.subscribe-intro {
+  max-width: 600px;
+  margin: 20px auto 48px;
+  color: #657169;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: left;
+}
+
+.subscribe-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-top: 30px;
+  padding: 18px 20px;
+  text-align: left;
+  background: #e9e8df;
+  border-radius: 13px;
+}
+
+.subscribe-summary div {
+  display: grid;
+  gap: 5px;
+}
+
+.subscribe-summary span {
+  color: #748078;
+  font-size: 12px;
+}
+
+.subscribe-summary strong {
+  color: #243027;
+  font-size: 14px;
+}
+
+.subscribe-summary button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 18px;
+  color: #1c211d;
+  background: #f4c95d;
+  border: none;
+  border-radius: 9px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.subscribe-summary button:hover {
+  background: #ffe18b;
+  transform: translateY(-2px);
+}
+
+.secure-payment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 18px;
+  color: #768178;
+  font-size: 13px;
+}
+
+.secure-payment svg {
+  color: #8b6a21;
+}
+
+@media (max-width: 650px) {
+  .subscribe-content {
+    padding-top: 45px;
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subscribe-summary {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .subscribe-summary button {
+    width: 100%;
+  }
+}

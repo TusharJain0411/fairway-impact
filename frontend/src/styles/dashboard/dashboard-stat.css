@@ -1,0 +1,53 @@
+.dashboard-stat {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 19px;
+  background: #ffffff;
+  border: 1px solid #e0e4e0;
+  border-radius: 13px;
+}
+
+.stat-icon {
+  display: grid;
+  width: 43px;
+  height: 43px;
+  place-items: center;
+  border-radius: 11px;
+}
+
+.stat-yellow {
+  color: #a16f0e;
+  background: #faedc9;
+}
+
+.stat-pink {
+  color: #b54267;
+  background: #f9e0e8;
+}
+
+.stat-blue {
+  color: #387397;
+  background: #ddecf3;
+}
+
+.stat-green {
+  color: #477947;
+  background: #e0f0dd;
+}
+
+.dashboard-stat p {
+  margin-bottom: 3px;
+  color: #6e7a72;
+  font-size: 12px;
+}
+
+.dashboard-stat h3 {
+  color: #253028;
+  font-size: 20px;
+}
+
+.dashboard-stat span {
+  color: #8c968f;
+  font-size: 11px;
+}

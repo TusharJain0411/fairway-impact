@@ -1,0 +1,234 @@
+.admin-winners-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 45px;
+}
+
+.admin-winners-header {
+  margin-bottom: 30px;
+}
+
+.admin-winners-header h1 {
+  color: #253128;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(36px, 4vw, 52px);
+}
+
+.admin-winners-header p:not(.admin-eyebrow) {
+  margin-top: 10px;
+  color: #6e7a72;
+  font-size: 15px;
+}
+
+.winner-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.winner-summary-grid article {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e0e5e0;
+  border-radius: 14px;
+}
+
+.winner-summary-grid article svg {
+  color: #9a7118;
+}
+
+.winner-summary-grid span,
+.winner-summary-grid strong {
+  display: block;
+}
+
+.winner-summary-grid span {
+  color: #748078;
+  font-size: 12px;
+}
+
+.winner-summary-grid strong {
+  margin-top: 3px;
+  color: #2c392f;
+  font-size: 23px;
+}
+
+.admin-winners-table-section {
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e0e5e0;
+  border-radius: 16px;
+}
+
+.admin-winners-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.admin-winners-table {
+  min-width: 1040px;
+  overflow: hidden;
+  border: 1px solid #e1e6e1;
+  border-radius: 11px;
+}
+
+.admin-winners-table-header,
+.admin-winners-table-row {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr 0.7fr 0.8fr 0.8fr 0.7fr 0.75fr;
+  align-items: center;
+  gap: 14px;
+  padding: 15px 16px;
+}
+
+.admin-winners-table-header {
+  color: #738077;
+  background: #f1f4f0;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.admin-winners-table-row {
+  color: #68756c;
+  border-top: 1px solid #e7eae7;
+  font-size: 13px;
+}
+
+.winner-member {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.winner-member > span {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  color: #26382b;
+  background: #e1f0dd;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.winner-member strong,
+.winner-member small {
+  display: block;
+}
+
+.winner-member strong {
+  color: #2b382f;
+}
+
+.winner-member small {
+  margin-top: 3px;
+  color: #89938c;
+  font-size: 11px;
+}
+
+.admin-winners-table-row > b {
+  color: #9a7118;
+  font-size: 15px;
+}
+
+.view-proof-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+  padding: 7px 8px;
+  color: #5c6c61;
+  background: #f1f4f1;
+  border: none;
+  border-radius: 7px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.winner-status {
+  width: fit-content;
+  padding: 5px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.status-pending {
+  color: #956a14;
+  background: #faedca;
+}
+
+.status-approved,
+.status-paid {
+  color: #397142;
+  background: #e2f1df;
+}
+
+.status-rejected {
+  color: #a6464f;
+  background: #f7e1e4;
+}
+
+.winner-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.winner-actions button {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.approve-winner-btn {
+  color: #397142;
+  background: #e2f1df;
+}
+
+.reject-winner-btn {
+  color: #a6464f;
+  background: #f7e1e4;
+}
+
+.mark-paid-btn {
+  width: auto !important;
+  padding: 0 9px;
+  color: #1d251f;
+  background: #f4c95d;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.admin-winners-table-simple .admin-winners-table-header,
+.admin-winners-table-simple .admin-winners-table-row {
+  grid-template-columns: 1.5fr 1fr 0.8fr 0.9fr 0.6fr;
+}
+
+.admin-winners-table-simple.all-payouts-paid .admin-winners-table-header,
+.admin-winners-table-simple.all-payouts-paid .admin-winners-table-row {
+  grid-template-columns: 1.5fr 1fr 0.8fr 0.9fr;
+}
+
+@media (max-width: 700px) {
+  .admin-winners-page {
+    padding: 76px 16px 25px;
+  }
+
+  .winner-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-winners-table-section {
+    padding: 15px;
+  }
+}

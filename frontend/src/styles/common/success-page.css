@@ -1,0 +1,60 @@
+.success-page {
+  display: grid;
+  min-height: 100vh;
+  padding: 20px;
+  place-items: center;
+  background: #f5f5ef;
+}
+
+.success-card {
+  width: min(100%, 520px);
+  padding: 48px 35px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #e0e5e0;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(28, 43, 33, 0.08);
+}
+
+.success-icon {
+  display: grid;
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 23px;
+  place-items: center;
+  color: #397142;
+  background: #e2f1df;
+  border-radius: 50%;
+}
+
+.success-eyebrow {
+  margin-bottom: 10px;
+  color: #9a731e;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.success-card h1 {
+  color: #253128;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(34px, 5vw, 46px);
+}
+
+.success-card > p:not(.success-eyebrow) {
+  margin: 15px auto 28px;
+  color: #6d796f;
+  line-height: 1.65;
+}
+
+.success-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 18px;
+  color: #1d251f;
+  background: #f4c95d;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 700;
+}

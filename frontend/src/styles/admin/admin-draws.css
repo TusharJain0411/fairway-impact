@@ -1,0 +1,448 @@
+.admin-draws-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 45px;
+}
+
+.admin-draws-header,
+.simulation-heading,
+.draw-publish-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.admin-draws-header {
+  margin-bottom: 30px;
+}
+
+.admin-draws-header h1,
+.draw-mode-card h2,
+.draw-pool-card h2,
+.draw-simulation-card h2,
+.draw-publish-card h2 {
+  color: #253128;
+  font-family: "Playfair Display", serif;
+}
+
+.admin-draws-header h1 {
+  font-size: clamp(36px, 4vw, 52px);
+}
+
+.admin-draws-header p:not(.admin-eyebrow) {
+  margin-top: 10px;
+  color: #6e7a72;
+  font-size: 15px;
+}
+
+.draw-page-status {
+  padding: 8px 12px;
+  color: #8d6718;
+  background: #faedca;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  
+}
+
+.draw-page-status.published {
+  color: #397142;
+  background: #e2f1df;
+}
+
+.draw-settings-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.draw-mode-card,
+.draw-pool-card,
+.draw-simulation-card,
+.draw-publish-card {
+  padding: 27px;
+  background: #ffffff;
+  border: 1px solid #e0e5e0;
+  border-radius: 16px;
+}
+
+.draw-mode-card h2 {
+  margin-bottom: 20px;
+  font-size: 27px;
+}
+
+.draw-mode-option {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 13px;
+  margin-top: 11px;
+  padding: 15px;
+  color: #66736a;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid #dfe5df;
+  border-radius: 11px;
+  cursor: pointer;
+}
+
+.draw-mode-option > svg {
+  color: #9a7118;
+}
+
+.draw-mode-option strong,
+.draw-mode-option small {
+  display: block;
+}
+
+.draw-mode-option strong {
+  margin-bottom: 4px;
+  color: #2d392f;
+  font-size: 14px;
+}
+
+.draw-mode-option small {
+  font-size: 12px;
+}
+
+.selected-draw-mode {
+  background: #fffaf0;
+  border: 2px solid #d3a337;
+}
+
+.draw-pool-card {
+  color: #f7f7f1;
+  background: #203027;
+  border: none;
+}
+
+.draw-pool-card h2 {
+  margin: 8px 0;
+  color: #f4c95d;
+  font-size: 39px;
+}
+
+.draw-pool-card > p:not(.admin-eyebrow) {
+  color: #bdc9c0;
+  font-size: 13px;
+}
+
+.draw-pool-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 23px;
+}
+
+.draw-pool-list div {
+  padding: 13px;
+  background: #2c3c31;
+  border-radius: 10px;
+}
+
+.draw-pool-list span,
+.draw-pool-list small {
+  display: block;
+  color: #b6c1b9;
+  font-size: 11px;
+}
+
+.draw-pool-list strong {
+  display: block;
+  margin: 6px 0;
+  color: #f4c95d;
+  font-size: 15px;
+}
+
+.draw-simulation-card {
+  margin-bottom: 24px;
+}
+
+.simulation-heading {
+  align-items: flex-start;
+}
+
+.simulation-heading h2 {
+  margin-bottom: 8px;
+  font-size: 27px;
+}
+
+.simulation-heading p:not(.admin-eyebrow) {
+  max-width: 600px;
+  color: #6d796f;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.simulate-draw-btn,
+.publish-draw-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 16px;
+  color: #1d251f;
+  background: #f4c95d;
+  border: none;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.empty-draw-state {
+  margin-top: 24px;
+  padding: 42px 20px;
+  color: #768279;
+  text-align: center;
+  background: #f5f7f4;
+  border: 1px dashed #d8dfd8;
+  border-radius: 12px;
+}
+
+.empty-draw-state svg {
+  margin-bottom: 10px;
+  color: #af8426;
+}
+
+.empty-draw-state h3 {
+  margin-bottom: 5px;
+  color: #344239;
+  font-size: 16px;
+}
+
+.draw-result-area {
+  margin-top: 25px;
+  padding: 25px;
+  text-align: center;
+  background: #f7f5ed;
+  border-radius: 12px;
+}
+
+.draw-number-list {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  margin-bottom: 16px;
+}
+
+.draw-number-list span {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  color: #1f2b23;
+  background: #f4c95d;
+  border-radius: 50%;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.draw-result-area p {
+  color: #69766d;
+  font-size: 13px;
+}
+
+.draw-result-area strong {
+  color: #936b17;
+}
+
+.draw-publish-card {
+  background: #e1eadc;
+}
+
+.draw-publish-card h2 {
+  margin-bottom: 8px;
+  font-size: 27px;
+}
+
+.draw-publish-card p:not(.admin-eyebrow) {
+  max-width: 600px;
+  color: #68756c;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.publish-draw-btn:disabled {
+  color: #8a918a;
+  background: #cbd1ca;
+  cursor: not-allowed;
+}
+
+.create-draw-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.create-draw-form label {
+  display: block;
+  margin-bottom: 7px;
+  color: #48564c;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.create-draw-form input,
+.create-draw-form select {
+  width: 100%;
+  padding: 12px;
+  color: #2b382f;
+  background: #ffffff;
+  border: 1px solid #d9e0da;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.create-draw-actions {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+
+.cancel-create-draw-btn {
+  padding: 12px 16px;
+  color: #526158;
+  background: #eef2ee;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+
+.draw-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.draw-header-actions .simulate-draw-btn {
+  padding: 10px 14px;
+}
+
+.simulate-draw-btn:hover,
+.publish-draw-btn:hover {
+  background: #ffe18b;
+}
+
+.simulate-draw-btn:disabled,
+.publish-draw-btn:disabled,
+.draw-mode-option:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.create-draw-card {
+  margin-bottom: 24px;
+  padding: 27px;
+  background: #ffffff;
+  border: 1px solid #e0e5e0;
+  border-radius: 16px;
+}
+
+.create-draw-card h2 {
+  color: #253128;
+  font-family: "Playfair Display", serif;
+  font-size: 27px;
+}
+
+.create-draw-form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.create-draw-form input,
+.create-draw-form select {
+  box-sizing: border-box;
+}
+
+.create-draw-actions {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.cancel-create-draw-btn {
+  height: 45px;
+  padding: 0 16px;
+  color: #526158;
+  background: #eef2ee;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-create-draw-btn:hover {
+  background: #dfe7df;
+}
+
+
+@media (max-width: 1000px) {
+  .draw-settings-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .admin-draws-page {
+    padding: 76px 16px 25px;
+  }
+
+  .admin-draws-header,
+  .simulation-heading,
+  .draw-publish-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .draw-header-actions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .draw-header-actions .simulate-draw-btn {
+    flex: 1;
+  }
+
+  .draw-page-status {
+    width: 100%;
+    text-align: center;
+  }
+
+  .simulate-draw-btn,
+  .publish-draw-btn {
+    width: 100%;
+  }
+
+  .draw-pool-list,
+  .create-draw-form {
+    grid-template-columns: 1fr;
+  }
+
+  .create-draw-actions {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .create-draw-actions button {
+    width: 100%;
+  }
+
+  .draw-number-list {
+    gap: 8px;
+  }
+
+  .draw-number-list span {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+  }
+}
